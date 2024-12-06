@@ -27,7 +27,7 @@ This is  product catalog for an e-commerce site built with Vite, React, TypeScri
 
 This app is deployed on Vercel. You can access it at the following URL:
 
-[https://product-catalog-vite.vercel.app](https://product-catalog-vite.vercel.app)
+[https://intern-wingman.vercel.app](https://intern-wingman.vercel.app)
 
 ## GitHub Repository
 
