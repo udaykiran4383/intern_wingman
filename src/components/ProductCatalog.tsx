@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { RootState, AppDispatch } from '../store'
+import { AppDispatch } from '../store'
 import { fetchProducts, selectProducts, selectStatus, selectError, selectSearchTerm, selectSortBy, selectSortOrder, selectCurrentPage, selectItemsPerPage } from '../store/productsSlice'
 import ProductCard from './ProductCard'
 import Pagination from './Pagination'
