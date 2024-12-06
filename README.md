@@ -1,51 +1,38 @@
-# React + TypeScript + Vite
+# Product Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is  product catalog for an e-commerce site built with Vite, React, TypeScript, Redux Toolkit, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive design (grid layout for desktop, single-column list for mobile)
+- Live search functionality
+- Dark mode support
+- Fetches product data from an API
+- Uses Redux Toolkit for state management
+- Styled with Tailwind CSS
 
-## Expanding the ESLint configuration
+## Running the app locally
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open your browser and navigate to `http://localhost:5173`
 
-- Configure the top-level `parserOptions` property like this:
+## Building for production
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Run the build command: `npm run build`
+2. The built files will be in the `dist` directory
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Deployment
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+This app is deployed on Vercel. You can access it at the following URL:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# intern_wingman
+[https://product-catalog-vite.vercel.app](https://product-catalog-vite.vercel.app)
+
+## GitHub Repository
+
+The source code is available on GitHub:
+
+[https://github.com/udaykiran4383/intern_wingman/blob/main/src/App.tsx](https://github.com/udaykiran4383/intern_wingman/blob/main/src/App.tsx)
+
+No login credentials are required to access the app.
